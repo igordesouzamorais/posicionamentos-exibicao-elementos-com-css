@@ -49,6 +49,14 @@
             color: white;
             text-decoration: none;
         }
+
+        .none {
+            display: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
     </style>
 </head>
 <body>
@@ -89,8 +97,7 @@
     <b class="exemplo inline-block">exemplo inline-block 06</b>
     <p>Lorem ipsum dolor, <b class="exemplo inline-block">sit amet</b> consectetur adipisicing elit. Odit laudantium veniam debitis sapiente vero, illo delectus nam omnis earum sunt deleniti, eos, deserunt voluptas consequatur. Neque distinctio vitae fugiat modi?</p>
 
-    <br><br><br>
-
+    <h2>Menu de NAV</h2>
     <nav class="menu">
         <ul>
             <li><a href="">Link 1</a></li>
@@ -98,5 +105,20 @@
             <li><a href="">Link 3</a></li>
         </ul>
     </nav>
+
+    <br><br>
+    <code>display: none;</code>
+    <br><br>
+    <span class="exemplo">Span de teste antes</span>
+    <div class="exemplo none">Exemplo display: none;</div>
+    <span class="exemplo">Span de teste depois</span>
+
+    <br><br>
+    <code>display: none vs visibility: hidden</code>
+    <br><br>
+    <span class="exemplo">Exemplo span 01</span>
+    <span class="exemplo none">Exemplo span 02</span>
+    <span class="exemplo hidden">Exemplo span 03</span>
+    <span class="exemplo">Exemplo span 04</span>
 </body>
 </html>
