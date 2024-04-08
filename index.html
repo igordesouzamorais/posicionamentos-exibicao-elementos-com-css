@@ -22,9 +22,32 @@
             height: 300px; /*nao considera*/
         }
 
-        b {
-            margin: 20px; /*direita e esquerda apenas*/
+        p > b.exemplo {
+            margin: 10px; /*direita e esquerda apenas*/
             padding: 10px; /*direita e esquerda apenas*/
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .menu {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -55,6 +78,25 @@
     <span class="exemplo inline">Exemplo 02</span>
     <em class="exemplo">Exemplo 03</em>
     <p>Lorem ipsum dolor, <b class="exemplo">sit amet</b> consectetur adipisicing elit. Odit laudantium veniam debitis sapiente vero, illo delectus nam omnis earum sunt deleniti, eos, deserunt voluptas consequatur. Neque distinctio vitae fugiat modi?</p>
-    <p style="display: inline;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet repellendus quasi explicabo veniam expedita alias earum id sit. Vero omnis explicabo ipsa numquam. Qui quisquam et maiores tempore blanditiis assumenda.</p>
+
+    <code>display: inline-block;</code>
+    <br><br>
+    <span class="exemplo inline-block">exemplo inline-block 01</span>
+    <em class="exemplo inline-block">exemplo inline-block 02</em>
+    <b class="exemplo inline-block">exemplo inline-block 03</b>
+    <span class="exemplo inline-block">exemplo inline-block 04</span>
+    <em class="exemplo inline-block">exemplo inline-block 05</em>
+    <b class="exemplo inline-block">exemplo inline-block 06</b>
+    <p>Lorem ipsum dolor, <b class="exemplo inline-block">sit amet</b> consectetur adipisicing elit. Odit laudantium veniam debitis sapiente vero, illo delectus nam omnis earum sunt deleniti, eos, deserunt voluptas consequatur. Neque distinctio vitae fugiat modi?</p>
+
+    <br><br><br>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
