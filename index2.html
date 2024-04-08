@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento e Exibição de Elementos com CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Roboto;
+        }
+
+        .exemplo {
+            background-color: lightseagreen;
+        }
+
+        .container {
+            border: solid 1px lightseagreen;
+            text-align: center;
+        }
+
+        #item-01 {
+            height: 50px;
+            vertical-align: middle;
+        }
+        
+        #item-04 {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhando elementos inline</h1>
+
+    <div class="container">
+        <img id="item-01" src="https://img.freepik.com/vetores-gratis/instagram-icone-novo_1057-2227.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1712534400&semt=ais" alt="">
+        <span id="item-02" class="exemplo">Item 02</span>
+        <span id="item-03" class="exemplo">Item 03</span>
+        <span id="item-04" class="exemplo">Item 04</span>
+    </div>
+</body>
+</html>
