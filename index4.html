@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento e Exibição de Elementos com CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Roboto;
+        }
+
+        .exemplo {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 0.5rem;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        #elemento-1 {
+            background-color: aquamarine;
+        }
+
+        #elemento-2 {
+            background-color: bisque;
+            position: relative;
+            top: 50px;
+            right: 50px;
+        }
+
+        #elemento-3 {
+            background-color: brown;
+        }
+
+        #elemento-4 {
+            background-color: chartreuse;
+        }
+
+        #elemento-5 {
+            background-color: coral;
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+
+        #elemento-6 {
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Posicionando elementos na tela</h1>
+    <p>A propriedade position vai nos ajudar a manipular a localização/posição do elemento na sua página.</p>
+
+    <ul>
+        <li><code>position: static;</code></li>
+        <li><code>position: relative;</code></li>
+        <li><code>position: absolute;</code></li>
+        <li><code>position: fixed;</code></li>
+        <li><code>position: sticky;</code></li>
+    </ul>
+
+    <h2>Exemplos: <code>relative</code></h2><!--valor padrao-->
+
+    <div id="elemento-1" class="exemplo inline-block">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline-block">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline-block">Elemento 03</div>
+
+    <br><hr><br>
+
+    <div class="exemplo" id="elemento-4">Elemento 4</div>
+    <div class="exemplo" id="elemento-5">Elemento 5</div>
+    <div class="exemplo" id="elemento-6">Elemento 6</div>
+</body>
+</html>
