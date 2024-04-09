@@ -34,6 +34,8 @@
 
         #elemento-2 {
             background-color: #2ecc71;
+            position: absolute;
+            right: 0px;
         }
 
         #elemento-3 {
@@ -46,10 +48,28 @@
 
         #elemento-5 {
             background-color: #e67e22;
+            position: absolute;
+            left: 130px;
         }
 
         #elemento-6 {
             background-color: #e74c3c;
+        }
+
+        #elemento-pai {
+            width: 50%;
+            height: 300px;
+            border: solid 1px crimson;
+            position: relative; /*relative nesse caso faz o absolute #elemento-filho se basear nele em vez da pagina*/
+            /*caso contrario o #elemento-filho iria se basear na pagina*/
+        }
+
+        #elemento-filho {
+            background-color: #8e44ad;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
         }
 
     </style>
@@ -77,5 +97,11 @@
     <div class="exemplo" id="elemento-4">Elemento 4</div>
     <div class="exemplo" id="elemento-5">Elemento 5</div>
     <div class="exemplo" id="elemento-6">Elemento 6</div>
+
+    <br><hr><br>
+
+    <div id="elemento-pai">
+        <div id="elemento-filho" class="exemplo"></div>
+    </div>
 </body>
 </html>
